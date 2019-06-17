@@ -75,10 +75,6 @@ import Link from '../packages/link/index.js';
 import Divider from '../packages/divider/index.js';
 import Image from '../packages/image/index.js';
 import Calendar from '../packages/calendar/index.js';
-import Backtop from '../packages/backtop/index.js';
-import InfiniteScroll from '../packages/infiniteScroll/index.js';
-import PageHeader from '../packages/page-header/index.js';
-import CascaderPanel from '../packages/cascader-panel/index.js';
 import locale from 'element-ui/src/locale';
 import CollapseTransition from 'element-ui/src/transitions/collapse-transition';
 
@@ -154,9 +150,6 @@ const components = [
   Divider,
   Image,
   Calendar,
-  Backtop,
-  PageHeader,
-  CascaderPanel,
   CollapseTransition
 ];
 
@@ -168,7 +161,6 @@ const install = function(Vue, opts = {}) {
     Vue.component(component.name, component);
   });
 
-  Vue.use(InfiniteScroll);
   Vue.use(Loading.directive);
 
   Vue.prototype.$ELEMENT = {
@@ -192,7 +184,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export default {
-  version: '2.9.1',
+  version: '2.8.2',
   locale: locale.use,
   i18n: locale.i18n,
   install,
@@ -271,9 +263,5 @@ export default {
   Link,
   Divider,
   Image,
-  Calendar,
-  Backtop,
-  InfiniteScroll,
-  PageHeader,
-  CascaderPanel
+  Calendar
 };

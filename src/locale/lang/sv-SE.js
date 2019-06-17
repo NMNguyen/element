@@ -67,8 +67,7 @@ export default {
     cascader: {
       noMatch: 'Hittade inget',
       loading: 'Laddar',
-      placeholder: 'Välj',
-      noData: 'Ingen data'
+      placeholder: 'Välj'
     },
     pagination: {
       goto: 'Gå till',
@@ -108,9 +107,6 @@ export default {
     },
     image: {
       error: 'FAILED' // to be translated
-    },
-    pageHeader: {
-      title: 'Back' // to be translated
     }
   }
 };

@@ -226,7 +226,6 @@
         value = parseFloat(value.toFixed(this.precision));
         this.$emit('input', value);
         this.$nextTick(() => {
-          this.displayTooltip();
           this.$refs.tooltip && this.$refs.tooltip.updatePopper();
         });
         if (!this.dragging && this.value !== this.oldValue) {

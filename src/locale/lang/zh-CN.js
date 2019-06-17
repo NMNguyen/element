@@ -67,8 +67,7 @@ export default {
     cascader: {
       noMatch: '无匹配数据',
       loading: '加载中',
-      placeholder: '请选择',
-      noData: '暂无数据'
+      placeholder: '请选择'
     },
     pagination: {
       goto: '前往',
@@ -108,9 +107,6 @@ export default {
     },
     image: {
       error: '加载失败'
-    },
-    pageHeader: {
-      title: '返回'
     }
   }
 };

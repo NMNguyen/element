@@ -67,8 +67,7 @@ export default {
     cascader: {
       noMatch: 'هیچ داده‌ای پیدا نشد',
       loading: 'بارگیری',
-      placeholder: 'انتخاب کنید',
-      noData: 'اطلاعاتی وجود ندارد'
+      placeholder: 'انتخاب کنید'
     },
     pagination: {
       goto: 'برو به',
@@ -107,10 +106,7 @@ export default {
       hasCheckedFormat: '{checked} مورد از {total} مورد انتخاب شده است'
     },
     image: {
-      error: 'خطا در بارگیری تصویر'
-    },
-    pageHeader: {
-      title: 'بازگشت'
+      error: 'FAILED' // to be translated
     }
   }
 };

@@ -67,8 +67,7 @@ export default {
     cascader: {
       noMatch: 'Համապատասխան տուեալներ չկան',
       loading: 'Բեռնում',
-      placeholder: 'Ընտրել',
-      noData: 'Տվյալներ չկան'
+      placeholder: 'Ընտրել'
     },
     pagination: {
       goto: 'Անցնել',
@@ -108,9 +107,6 @@ export default {
     },
     image: {
       error: 'FAILED' // to be translated
-    },
-    pageHeader: {
-      title: 'Back' // to be translated
     }
   }
 };

@@ -67,8 +67,7 @@ export default {
     cascader: {
       noMatch: 'لايوجد بيانات مطابقة',
       loading: 'جار التحميل',
-      placeholder: 'أختر',
-      noData: 'لايوجد بيانات'
+      placeholder: 'أختر'
     },
     pagination: {
       goto: 'أذهب إلى',
@@ -107,9 +106,6 @@ export default {
     },
     image: {
       error: 'FAILED' // to be translated
-    },
-    pageHeader: {
-      title: 'Back' // to be translated
     }
   }
 };

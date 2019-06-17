@@ -67,8 +67,7 @@ export default {
     cascader: {
       noMatch: 'Тохирох өгөгдөл байхгүй',
       loading: 'Ачаалж байна',
-      placeholder: 'Сонгох',
-      noData: 'Өгөгдөл байхгүй'
+      placeholder: 'Сонгох'
     },
     pagination: {
       goto: 'Очих',
@@ -108,9 +107,6 @@ export default {
     },
     image: {
       error: 'FAILED' // to be translated
-    },
-    pageHeader: {
-      title: 'Back' // to be translated
     }
   }
 };

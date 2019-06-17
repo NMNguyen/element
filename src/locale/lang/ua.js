@@ -67,8 +67,7 @@ export default {
     cascader: {
       noMatch: 'Співпадінь не знайдено',
       loading: 'Завантаження',
-      placeholder: 'Обрати',
-      noData: 'Немає даних'
+      placeholder: 'Обрати'
     },
     pagination: {
       goto: 'Перейти',
@@ -108,9 +107,6 @@ export default {
     },
     image: {
       error: 'FAILED' // to be translated
-    },
-    pageHeader: {
-      title: 'Back' // to be translated
     }
   }
 };

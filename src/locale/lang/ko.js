@@ -67,8 +67,7 @@ export default {
     cascader: {
       noMatch: '맞는 데이터가 없습니다',
       loading: '불러오는 중',
-      placeholder: '선택',
-      noData: '데이터 없음'
+      placeholder: '선택'
     },
     pagination: {
       goto: '이동',
@@ -108,9 +107,6 @@ export default {
     },
     image: {
       error: 'FAILED' // to be translated
-    },
-    pageHeader: {
-      title: 'Back' // to be translated
     }
   }
 };

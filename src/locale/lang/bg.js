@@ -67,8 +67,7 @@ export default {
     cascader: {
       noMatch: 'Няма намерени',
       loading: 'Зареждане',
-      placeholder: 'Избери',
-      noData: 'Няма данни'
+      placeholder: 'Избери'
     },
     pagination: {
       goto: 'Иди на',
@@ -108,9 +107,6 @@ export default {
     },
     image: {
       error: 'FAILED' // to be translated
-    },
-    pageHeader: {
-      title: 'Back' // to be translated
     }
   }
 };

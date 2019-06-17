@@ -1,6 +1,5 @@
 import objectAssign from 'element-ui/src/utils/merge';
 import { markNodeData, NODE_KEY } from './util';
-import { arrayFindIndex } from 'element-ui/src/utils/util';
 
 export const getChildState = node => {
   let all = true;
@@ -436,10 +435,8 @@ export default class Node {
     const newNodes = [];
 
     newData.forEach((item, index) => {
-      const key = item[NODE_KEY];
-      const isNodeExists = !!key && arrayFindIndex(oldData, data => data[NODE_KEY] === key) >= 0;
-      if (isNodeExists) {
-        newDataMap[key] = { index, data: item };
+      if (item[NODE_KEY]) {
+        newDataMap[item[NODE_KEY]] = { index, data: item };
       } else {
         newNodes.push({ index, data: item });
       }

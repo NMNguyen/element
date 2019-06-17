@@ -117,8 +117,7 @@ export default {
         days = currentMonthRange.concat(nextMonthRange);
       } else {
         const date = this.date;
-        let firstDay = getFirstDayOfMonth(date);
-        firstDay = firstDay === 0 ? 7 : firstDay;
+        const firstDay = getFirstDayOfMonth(date);
         const prevMonthDays = getPrevMonthLastDays(date, firstDay - 1).map(day => ({
           text: day,
           type: 'prev'

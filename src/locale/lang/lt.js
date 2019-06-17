@@ -67,8 +67,7 @@ export default {
     cascader: {
       noMatch: 'Duomenų nerasta',
       loading: 'Kraunasi',
-      placeholder: 'Pasirink',
-      noData: 'Nėra duomenų'
+      placeholder: 'Pasirink'
     },
     pagination: {
       goto: 'Eiti į',
@@ -108,9 +107,6 @@ export default {
     },
     image: {
       error: 'FAILED' // to be translated
-    },
-    pageHeader: {
-      title: 'Back' // to be translated
     }
   }
 };

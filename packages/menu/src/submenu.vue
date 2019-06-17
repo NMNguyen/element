@@ -208,9 +208,6 @@
         this.dispatch('ElSubmenu', 'mouse-leave-child');
         clearTimeout(this.timeout);
         this.timeout = setTimeout(() => {
-          if (this.appendToBody) {
-            this.rootMenu.openedMenus = [];
-          }
           !this.mouseInChild && this.rootMenu.closeMenu(this.index);
         }, this.hideTimeout);
       },

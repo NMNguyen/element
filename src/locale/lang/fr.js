@@ -67,8 +67,7 @@ export default {
     cascader: {
       noMatch: 'Aucune correspondance',
       loading: 'Chargement',
-      placeholder: 'Choisir',
-      noData: 'Aucune donnée'
+      placeholder: 'Choisir'
     },
     pagination: {
       goto: 'Aller à',
@@ -107,9 +106,6 @@ export default {
     },
     image: {
       error: 'FAILED' // to be translated
-    },
-    pageHeader: {
-      title: 'Back' // to be translated
     }
   }
 };

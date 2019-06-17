@@ -45,9 +45,6 @@ export interface ElMessageOptions {
 
   /** Callback function when closed with the message instance as the parameter */
   onClose?: CloseEventHandler
-  
-  /** Set the distance to the top of viewport. Default is 20 px. */
-  offset?: number
 }
 
 export interface ElMessage {

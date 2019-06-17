@@ -67,8 +67,7 @@ export default {
     cascader: {
       noMatch: 'Eşleşen veri bulunamadı',
       loading: 'Yükleniyor',
-      placeholder: 'Seç',
-      noData: 'Veri yok'
+      placeholder: 'Seç'
     },
     pagination: {
       goto: 'Git',
@@ -108,9 +107,6 @@ export default {
     },
     image: {
       error: 'FAILED' // to be translated
-    },
-    pageHeader: {
-      title: 'Back' // to be translated
     }
   }
 };

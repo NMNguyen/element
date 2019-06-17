@@ -69,8 +69,7 @@ export default {
     cascader: {
       noMatch: 'Žiadna zhoda',
       loading: 'Načítavanie',
-      placeholder: 'Vybrať',
-      noData: 'Žiadne dáta'
+      placeholder: 'Vybrať'
     },
     pagination: {
       goto: 'Choď na',
@@ -110,9 +109,6 @@ export default {
     },
     image: {
       error: 'FAILED' // to be translated
-    },
-    pageHeader: {
-      title: 'Back' // to be translated
     }
   }
 };

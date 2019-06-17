@@ -67,8 +67,7 @@ export default {
     cascader: {
       noMatch: 'Ei vastaavia tietoja',
       loading: 'Lataa',
-      placeholder: 'Valitse',
-      noData: 'Ei tietoja'
+      placeholder: 'Valitse'
     },
     pagination: {
       goto: 'Mene',
@@ -108,9 +107,6 @@ export default {
     },
     image: {
       error: 'FAILED' // to be translated
-    },
-    pageHeader: {
-      title: 'Back' // to be translated
     }
   }
 };

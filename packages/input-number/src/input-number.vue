@@ -195,7 +195,7 @@
     methods: {
       toPrecision(num, precision) {
         if (precision === undefined) precision = this.numPrecision;
-        return parseFloat(Math.round(num * Math.pow(10, precision)) / Math.pow(10, precision));
+        return parseFloat(Number(num).toFixed(precision));
       },
       getPrecision(value) {
         if (value === undefined) return 0;

@@ -67,8 +67,7 @@ export default {
     cascader: {
       noMatch: 'Дал келген маалыматтар',
       loading: 'Жүктөлүүдө',
-      placeholder: 'тандоо',
-      noData: 'маалымат жок'
+      placeholder: 'тандоо'
     },
     pagination: {
       goto: 'Мурунку',
@@ -108,9 +107,6 @@ export default {
     },
     image: {
       error: 'FAILED' // to be translated
-    },
-    pageHeader: {
-      title: 'Back' // to be translated
     }
   }
 };

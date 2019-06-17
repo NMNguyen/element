@@ -67,8 +67,7 @@ export default {
     cascader: {
       noMatch: 'ไม่พบข้อมูลที่ตรงกัน',
       loading: 'กำลังโหลด',
-      placeholder: 'เลือก',
-      noData: 'ไม่พบข้อมูล'
+      placeholder: 'เลือก'
     },
     pagination: {
       goto: 'ไปที่',
@@ -108,9 +107,6 @@ export default {
     },
     image: {
       error: 'FAILED' // to be translated
-    },
-    pageHeader: {
-      title: 'Back' // to be translated
     }
   }
 };

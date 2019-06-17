@@ -67,8 +67,7 @@ export default {
     cascader: {
       noMatch: 'គ្មានទិន្ន័យដូច',
       loading: 'កំពុងផ្ទុក',
-      placeholder: 'ជ្រើសរើស',
-      noData: 'គ្មានទិន្ន័យ'
+      placeholder: 'ជ្រើសរើស'
     },
     pagination: {
       goto: 'ទៅកាន់',
@@ -108,9 +107,6 @@ export default {
     },
     image: {
       error: 'FAILED' // to be translated
-    },
-    pageHeader: {
-      title: 'Back' // to be translated
     }
   }
 };
