@@ -1,4 +1,5 @@
 <template>
+dwakdwaokdwaodkwaokdwaokdo
   <div
     class="el-select"
     :class="[selectSize ? 'el-select--' + selectSize : '']"
@@ -38,7 +39,7 @@
           type="info"
           @close="deleteTag($event, item)"
           disable-transitions>
-          <span class="el-select__tags-text">{{ item.value[labelKey] }}</span>
+          <span class="el-select__tags-text">{{ item.value[labelKey] }} dowkdoawdkwaokdaowkdwaokdowakdowakd</span>
         </el-tag>
       </transition-group>
 
