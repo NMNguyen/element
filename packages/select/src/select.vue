@@ -38,7 +38,7 @@
           type="info"
           @close="deleteTag($event, item)"
           disable-transitions>
-          <span class="el-select__tags-text">{{ item.currentLabel }}</span>
+          <span class="el-select__tags-text">{{ item.value[labelKey] }}</span>
         </el-tag>
       </transition-group>
 
@@ -249,6 +249,10 @@
     directives: { Clickoutside },
 
     props: {
+      labelKey: {
+        type: String,
+        default: 'userName'
+      },
       name: String,
       id: String,
       value: {
@@ -466,10 +470,12 @@
         });
         this.hoverIndex = -1;
         if (this.multiple && this.filterable) {
-          const length = this.$refs.input.value.length * 15 + 20;
-          this.inputLength = this.collapseTags ? Math.min(50, length) : length;
-          this.managePlaceholder();
-          this.resetInputHeight();
+          this.$nextTick(() => {
+            const length = this.$refs.input.value.length * 15 + 20;
+            this.inputLength = this.collapseTags ? Math.min(50, length) : length;
+            this.managePlaceholder();
+            this.resetInputHeight();
+          });
         }
         if (this.remote && typeof this.remoteMethod === 'function') {
           this.hoverIndex = -1;
@@ -510,6 +516,7 @@
         let option;
         const isObject = Object.prototype.toString.call(value).toLowerCase() === '[object object]';
         const isNull = Object.prototype.toString.call(value).toLowerCase() === '[object null]';
+        const isUndefined = Object.prototype.toString.call(value).toLowerCase() === '[object undefined]';
 
         for (let i = this.cachedOptions.length - 1; i >= 0; i--) {
           const cachedOption = this.cachedOptions[i];
@@ -522,8 +529,8 @@
           }
         }
         if (option) return option;
-        const label = (!isObject && !isNull)
-          ? value : '';
+        const label = (!isObject && !isNull && !isUndefined)
+          ? value : value[this.labelKey];
         let newOption = {
           value: value,
           currentLabel: label
@@ -750,7 +757,7 @@
 
       deleteSelected(event) {
         event.stopPropagation();
-        const value = this.multiple ? [] : null;
+        const value = this.multiple ? [] : '';
         this.$emit('input', value);
         this.emitChange(value);
         this.visible = false;
